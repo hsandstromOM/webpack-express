@@ -16,15 +16,9 @@
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs .",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "dependencies": {
-    "babel-cli": "^6.4.0",
-    "babel-core": "^6.22.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
-  },
-  "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.3",
@@ -36,8 +30,10 @@
     "chai": "^3.2.0",
     "cross-env": "^1.0.7",
     "css-loader": "^0.19.0",
-    "eslint": "^1.5.0",
-    "eslint-plugin-react": "^3.4.2",
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.22.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.8.2",
     "html-webpack-plugin": "^1.6.1",
@@ -57,5 +53,10 @@
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.2.0"
+  },
+  "devDependencies": {
+
+    "eslint": "^1.5.0",
+    "eslint-plugin-react": "^3.4.2"
   }
 }
