@@ -19,6 +19,8 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: 'app/index.tpl.html',
+      minify: {
+        collapseWhitespace: true},
       inject: 'body',
       filename: 'index.html'
     }),
