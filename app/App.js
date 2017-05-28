@@ -8,8 +8,8 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <div className={styles.app}>
-        bar
+       <div className={styles.app}>
+        <img id="logo" src="https://facebook.github.io/react/img/logo.svg"></img>
       </div>
     );
   }
