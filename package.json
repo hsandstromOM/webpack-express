@@ -12,11 +12,10 @@
   "license": "MIT",
   "scripts": {
     "test": "",
-    "start": "node server",
+    "start": "node server.js",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
-    "jscs": "jscs .",
-    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress"
+    "jscs": "jscs ."
   },
   "dependencies": {
     "autoprefixer": "^6.0.3",
